@@ -1,0 +1,233 @@
+/*
+  Purpose: The header element 
+*/
+
+/* ==========================================================================
+   BASE HEADER STYLES
+   ========================================================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 65px;
+    background: $white;
+}
+
+.header__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+}
+
+/* ==========================================================================
+   LOGO SECTION
+   ========================================================================== */
+
+.header__crest {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    height: 100%;
+}
+
+.header__crest--dual {
+    .header__logo-climate {
+        margin-left: 30px;
+        padding-left: 30px;
+        border-left: 2px solid $gray;
+    }
+}
+
+.header__logo-utas {
+    img {
+        width: 100%;
+        
+        @media (max-width: 768px) {
+            height: 50px;
+        }
+    }
+}
+
+.header__logo-climate {
+    img {
+        width: 100%;
+        
+        @media (max-width: 768px) {
+            height: 45px;
+        }
+    }
+}
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+.header__nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    
+    li a {
+        padding: auto;
+    }
+}
+
+/* ==========================================================================
+   HAMBURGER MENU
+   ========================================================================== */
+
+.hamburger {
+    border: none;
+    background: $white;
+    aspect-ratio: 1 /1 ;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger--active {
+    opacity: 0;
+}
+
+.hamburger__container {
+    width:36%;
+    aspect-ratio: 1 /1 ;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger__icon {
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: $black;
+    position: relative;
+    transition: all 0.3s ease;
+    left: -10px;
+    margin: 0;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 200%;
+        height: 3px;
+        background-color: $black;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 200%;
+        height: 3px;
+        background-color: $black;
+        position: absolute;
+        top: 8px;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+}
+
+/* ==========================================================================
+   SEARCH COMPONENT
+   ========================================================================== */
+
+.search {
+    border: black 2px solid;
+    background: $black;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__container {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__icon {
+    width: 25px;
+    height: 33px;
+    display: block;
+    transition: all 0.3s ease;
+    filter: invert(100%);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media screen and (min-width: $tablet) {
+    .header {
+        height: $tablet-header;
+      
+        .header__crest {
+            flex-basis: 500px;
+        }
+    }
+
+    .header__crest {
+     flex-basis: 500px;
+    }
+    
+    .hamburger {
+        width: $tablet-header;
+    }
+    
+    .search {
+        height: $tablet-header;
+        width: $tablet-header;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .header {
+        height: $desktop-header;
+
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .header__nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        
+        ul {
+            display: flex;
+            height: 100%;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+
+
+
