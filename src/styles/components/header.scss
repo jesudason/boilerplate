@@ -1,7 +1,3 @@
-/*
-  Purpose: The header element 
-*/
-
 /* ==========================================================================
    BASE HEADER STYLES
    ========================================================================== */
@@ -33,8 +29,7 @@
     align-items: center;
     justify-items: space-between;
     height: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 .header__crest--dual {
@@ -135,7 +130,7 @@
             text-decoration: none;
             color: $black;
             font-family: "Monserrat", sans-serif;
-            font-size: 1.0625rem;
+            font-size: 12px;
             font-weight: 600;
             
             &:hover {
@@ -274,7 +269,6 @@
         position: absolute;
         top: 14px;
         height: $desktop-header;
-        background: rgba(218, 165, 32, 0.473);
     }
     
     .hamburger {
@@ -285,6 +279,10 @@
         margin-left: 30px;
         flex-basis: 630px;
     }
+
+    .main-menu {
+        margin-bottom: 0;
+    }   
 
     .header__nav {
         display: flex;
