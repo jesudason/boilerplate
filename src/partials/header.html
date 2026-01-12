@@ -1,53 +1,72 @@
 <header class="header"> 
     <div class="header__wrapper"> 
     
-        <button class="hamburger" aria-controls="main-menu" aria-expanded="false">
-            <div class="hamburger__container">
-                <span class="hamburger__icon"></span>
+        <button class="header__hamburger" aria-controls="main-menu" aria-expanded="false">
+            <div class="header__hamburger-container">
+                <span class="header__hamburger-icon"></span>
             </div>
         </button>
 
         
         <div class="header__crest header__crest--dual">
-            <div class="header__logo-utas">
+            <div class="header__crest__primary"> <!-- Should be a button -->
                 <a href="/">
-                    <img src="images/logo.svg" alt="Company Logo">
+                    <img src="images/logo.svg" alt="Company Logo" class="header__crest__image">
                 </a>
             </div>
-            <div class="header__logo-climate">
-                <a href="/">
-                    <img src="images/logo-climate-action.svg" alt="Climate Logo">
+            <div class="header__crest__secondary"> <!-- Should be a button -->
+                <a href="/" class="header__crest__link">
+                    <img src="images/logo-climate-action.svg" alt="Climate Logo" class="header__crest__image">
                 </a>
             </div>
         </div>
 
-        <div class="pull-right">
-        <div class="header__menus">
-            <div class="secondary-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">I'm Interested in the uni</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
-                </ul>
-            </div>
-            <div class="main-menu">
-                <ul class="nav__list">
-                    <li class="main-menu__btn"><a href="#" class="nav__link">Study with us</a></li>
-                    <li class="main-menu__btn"><a href="#" class="nav__link">Uni life</a></li>
-                    <li class="main-menu__btn"><a href="#" class="nav__link">Our research</a></li>
-                    <li class="main-menu__btn"><a href="#" class="nav__link">For community & partners</a></li>
-                    <li class="main-menu__btn"><a href="#" class="nav__link">About us</a></li>
-                </ul>
-            </div>
-            
-        </div>
-
-        <div class="header__actions">
-            <button class="search" aria-controls="search-bar" aria-expanded="false">
-                <div class="search__container">
-                    <img src="images/Search_Icon.svg" alt="Search" class="search__icon">
+        <div class="header__pullright">
+            <div class="header__menus">
+                <div class="header__secondary-menu">
+                    <ul class="header__secondary-menu__list">
+                        <li class="header__secondary-menu__item header__secondary-menu__item--interested">
+                            <a href="#" class="header__secondary-menu__link">I'm Interested in the uni</a>
+                        </li>
+                        <li class="header__secondary-menu__item header__secondary-menu__item--login">
+                            <a href="#" class="header__secondary-menu__link">Login</a>
+                        </li>
+                    </ul>
                 </div>
-            </button>
-        </div>
+                <!-- Main Menu -->
+                <div class="header__main-menu">
+                    <ul class="header__main-menu__list">
+                        <li class="header__main-menu__item">
+                            <a href="#" class="header__main-menu__link">Study with us</a>
+                        </li>
+                        <li class="header__main-menu__item">
+                            <a href="#" class="header__main-menu__link">Uni life</a>
+                        </li>
+                        <li class="header__main-menu__item">
+                            <a href="#" class="header__main-menu__link">Our research</a>
+                        </li>
+                        <li class="header__main-menu__item">
+                            <a href="#" class="header__main-menu__link">For community & partners</a>
+                        </li>
+                        <li class="header__main-menu__item">
+                            <a href="#" class="header__main-menu__link">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="header__actions">
+                <button class="search-toggle" aria-label = "Open search bar">
+                    <span class="search-toggle__icon"></span>
+                    <span class="search-toggle__text">Search</span>
+<!-- 
+
+                    <div class="search__container">
+                        <img src="images/Search_Icon.svg" alt="Search" class="search__icon">
+                    </div> -->
+                </button>
+            </div>
         </div>
 
     </div>
