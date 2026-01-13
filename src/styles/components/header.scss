@@ -9,8 +9,8 @@
     width: 100%;
     height: 65px;
     background: $white;
+    font-family: $font-family-primary;
 }
-
 
 @media screen and (min-width: $tablet){
     .header {
@@ -286,7 +286,6 @@
     display: flex;
     width: 100%;
     height: 49px;
-    font-family: "Monserrat", sans-serif;
     font-weight: 600;
 
     &__item {
@@ -304,36 +303,6 @@
 
 }
 
-//     ul {
-//         display: flex;
-//         list-style: none;
-//         margin: 0;
-//         padding: 0;
-//     }
-
-//     .main-menu__btn {
-//         text-decoration: none;
-//         display: flex;
-//         width: 100%;
-//         padding: 0 24px;   
-//         align-items: flex-start;
-//         font-weight: 600;
-//         white-space: nowrap;
-//         // transition: border-color 0.3s ease;
-
-        
-//         .nav__link {
-//             color: $black;
-//             font-size: 1.0625rem;
-//             font-weight: 600;
-//             white-space: nowrap;
-//         }
-
-//         &:hover {
-//             border-bottom: 4px solid $primary-color;
-//         }
-//     }
-// }
 
 @media screen and (min-width: $desktop) {
     .header__menus {
@@ -347,13 +316,12 @@
 
 .header__hamburger {
     border: none;
-    box-sizing: border-box;
-    display: block;
     background: $white;
-    aspect-ratio: 1 /1 ;
+    width: 65px;
     height: 100%;
     cursor: pointer;
     position: relative;
+    // GPT
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,66 +332,117 @@
 }
 
 .header__hamburger-container {
-    width:36%;
-    aspect-ratio: 1 /1 ;
-    margin: 10px;
+    width: 26px;
+    height: 36.391px;
+    // GPT
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
+
 .header__hamburger-icon {
-    display: block;
-    width: 50%;
-    height: 3px;
+    // Icon dimensions based on container (responsive)
+    width: 60%;                    // Full width of container
+    height: 2px;      // ~3px when container is 26px
     background-color: $black;
     position: relative;
     transition: all 0.3s ease;
-    left: -10px;
-    margin: 0;
 
-    &::before {
-        content: '';
-        display: block;
-        width: 200%;
-        height: 3px;
-        background-color: $black;
-        position: absolute;
-        top: -8px;
-        left: 0;
-        transition: all 0.3s ease;
-    }
-
+    &::before,
     &::after {
         content: '';
         display: block;
-        width: 200%;
-        height: 3px;
+        width: calc(100% / 0.6);                // Same width as main line
+        height: 2px;               // Same height as main line
         background-color: $black;
         position: absolute;
-        top: 8px;
         left: 0;
         transition: all 0.3s ease;
     }
+
+    &::before {
+        top: -9.09px;    // -8px spacing when line is 3px
+    }
+
+    &::after {
+        top: 9.09px;     // +8px spacing when line is 3px
+    }
 }
 
-
-@media screen and (min-width: $tablet){
-    
+// Responsive adjustments for larger screens
+@media screen and (min-width: $tablet) {
     .header__hamburger {
         width: $tablet-header;
     }
     
+    // .header__hamburger-container {
+    //     width: 40px;                // Slightly larger on tablet
+    //     height: 30px;
+    // }
 }
 
 @media screen and (min-width: $desktop) {
-
     .header__hamburger {
         display: none;
     }
-
 }
+
+// .header__hamburger-icon {
+//     display: block;
+//     width: 50%;
+//     height: 3px;
+//     background-color: $black;
+//     position: relative;
+//     transition: all 0.3s ease;
+//     // left: -10px;
+//     margin: 0;
+//     justify-content: center;
+//     align-content: center;
+//     // padding-left: 10px;
+
+//     &::before {
+//         content: '';
+//         display: block;
+//         width: 200%;
+//         height: 3px;
+//         background-color: $black;
+//         position: absolute;
+//         top: -8px;
+//         left: 0;
+//         transition: all 0.3s ease;
+//     }
+
+//     &::after {
+//         content: '';
+//         display: block;
+//         width: 200%;
+//         height: 3px;
+//         background-color: $black;
+//         position: absolute;
+//         top: 8px;
+//         left: 0;
+//         transition: all 0.3s ease;
+//     }
+// }
+
+
+// @media screen and (min-width: $tablet){
+    
+//     .header__hamburger {
+//         width: $tablet-header;
+//     }
+    
+// }
+
+// @media screen and (min-width: $desktop) {
+
+//     .header__hamburger {
+//         display: none;
+//     }
+
+// }
 
 /* ==========================================================================
    SEARCH COMPONENT
