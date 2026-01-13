@@ -135,7 +135,7 @@
     flex-basis: 330px;
 
     &.header__crest--dual {
-      flex-basis: 630px;
+      flex-basis: 550px;
     }
 
     &__primary,
@@ -176,10 +176,15 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
-        font-size: 12px;
-    font-weight: 500;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.88px;
+    line-height: 15.4px;
     text-align: center;
-    // font-size: 0.6875rem;
+    text-decoration-color: rgb(100, 100, 100) ;
+    text-decoration: underline;
+    text-decoration-style:  solid; 
+    text-decoration-thickness: auto;
     margin-top: 25px;
 
     &__list {
@@ -233,7 +238,8 @@
         display: block;
         height: 49px;
         padding: 0 24px;
-        font-size: 17px;
+        font-size: 1rem;
+        max-width: 100%;
         letter-spacing: -0.21008px;
         line-height: 20px;
         
@@ -393,23 +399,6 @@
   }
 }
 
-
-// @media screen and (min-width: $tablet) and (max-width: 1279px) {
-    
-//     .search-toggle {
-//         height: $tablet-header;
-//         width: $tablet-header;
-//     }
-// }
-
-// @media screen and (min-width: 1280px) {
-
-//     .search-toggle {
-//         height: $desktop-header;
-//         width: 95px;
-//         flex-shrink: 0;
-//     }   
-// }
 
 
 
