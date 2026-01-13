@@ -151,67 +151,6 @@
   }
 }
 
-
-
-.search-toggle {
-  width: 65px;
-  height: 65px;
-  background: black;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  color: $white;
-  outline:0;
-  .search-toggle__icon{
-    display: block;
-    position: relative;
-    &::before{
-        font-family: "Font Awesome 6 Free"; // or "fa solid 900"
-        content: "\f002"; // Font Awesome search icon
-        font-size: 20px;
-        font-weight: normal;
-        position: absolute;
-        top: -14px;
-        left: calc(50% - 10px);
-    }
-  }
-  .search-toggle__text{
-    display: none;
-  }
-  &:hover,
-  &:focus {
-    background-color: lighten($secondary-color, 25%);
-  }
-}
-
-@media screen and (min-width: $tablet) {
-  .search-toggle {
-    width: 75px;
-    height: 75px;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .search-toggle {
-    width: 95px;
-    height: 115px;
-    background-position: center 44%;
-    margin-left: 16px;
-    .search-toggle__icon {
-      &::before{
-        top: 4px;
-      }
-    }
-    .search-toggle__text {
-      display: block;
-      font-size: 9px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding-top: 35px;
-    }
-  }
-}
-
 /* ==========================================================================
    NAVIGATION
    ========================================================================== */
@@ -389,113 +328,88 @@
     }
 }
 
-// .header__hamburger-icon {
-//     display: block;
-//     width: 50%;
-//     height: 3px;
-//     background-color: $black;
-//     position: relative;
-//     transition: all 0.3s ease;
-//     // left: -10px;
-//     margin: 0;
-//     justify-content: center;
-//     align-content: center;
-//     // padding-left: 10px;
 
-//     &::before {
-//         content: '';
-//         display: block;
-//         width: 200%;
-//         height: 3px;
-//         background-color: $black;
-//         position: absolute;
-//         top: -8px;
-//         left: 0;
-//         transition: all 0.3s ease;
-//     }
+/* ==========================================================================
+   SEARCH TOGGLE BUTTON
+   ========================================================================== */
 
-//     &::after {
-//         content: '';
-//         display: block;
-//         width: 200%;
-//         height: 3px;
-//         background-color: $black;
-//         position: absolute;
-//         top: 8px;
-//         left: 0;
-//         transition: all 0.3s ease;
-//     }
-// }
+.search-toggle {
+  width: 65px;
+  height: 65px;
+  background: $black;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: $white;
+  outline:0;
+  .search-toggle__icon{
+    display: block;
+    position: relative;
+    &::before{
+        font-family: 'Material Symbols Outlined'; // Changed from Font Awesome
+        content: "search";                        // Changed from "\f002"
+        font-size: 30px;
+        font-weight: normal;
+        position: absolute;
+        top: -14px;
+        left: calc(50% - 15px);
+    }
+  }
+  .search-toggle__text{
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    background-color: lighten($secondary-color, 25%);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .search-toggle {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .search-toggle {
+    width: 95px;
+    height: 115px;
+    background-position: center 44%;
+    margin-left: 16px;
+    .search-toggle__icon {
+      &::before{
+        top: 4px;
+        left: calc(50% - 15px);
+      }
+    }
+    .search-toggle__text {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 40px;
+    }
+  }
+}
 
 
-// @media screen and (min-width: $tablet){
+// @media screen and (min-width: $tablet) and (max-width: 1279px) {
     
-//     .header__hamburger {
+//     .search-toggle {
+//         height: $tablet-header;
 //         width: $tablet-header;
 //     }
-    
 // }
 
-// @media screen and (min-width: $desktop) {
+// @media screen and (min-width: 1280px) {
 
-//     .header__hamburger {
-//         display: none;
-//     }
-
+//     .search-toggle {
+//         height: $desktop-header;
+//         width: 95px;
+//         flex-shrink: 0;
+//     }   
 // }
-
-/* ==========================================================================
-   SEARCH COMPONENT
-   ========================================================================== */
-
-// .search {
-//     border: black 2px solid;
-//     background: $black;
-//     height: 65px;
-//     width: 65px;
-//     cursor: pointer;
-//     margin-left: 16px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .search__container {
-    
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .search__icon {
-//     width: 30px;
-//     height: 38px;
-//     display: block;
-//     transition: all 0.3s ease;
-//     filter: invert(100%);
-// }
-
-/* ==========================================================================
-   MEDIA QUERIES
-   ========================================================================== */
-
-@media screen and (min-width: $tablet) and (max-width: 1279px) {
-    
-    .search-toggle {
-        height: $tablet-header;
-        width: $tablet-header;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-
-    .search-toggle {
-        height: $desktop-header;
-        width: 95px;
-        flex-shrink: 0;
-    }   
-}
 
 
 
