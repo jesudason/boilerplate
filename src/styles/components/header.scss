@@ -10,20 +10,29 @@
     height: 65px;
     background: $white;
     font-family: $font-family-primary;
+
+    & + main {
+    margin-top: 65px;
+  }
 }
 
 @media screen and (min-width: $tablet){
     .header {
         height: $tablet-header;
-    }
+
+        & + main {
+          margin-top: $tablet-header; 
+        }
+
+  }
 }
 
 @media screen and (min-width: $desktop){
     .header {
-        position: absolute;
+
         top: 14px;
         height: $desktop-header;
-        
+
         .header__crest{
             // margin-left: 30;
             flex-grow: 0;
@@ -40,6 +49,10 @@
                     height: 60px;
                 }
             }
+        }
+
+        & + main {
+          margin-top: $desktop-header+15px; 
         }
     }
 
