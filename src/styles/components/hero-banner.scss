@@ -25,20 +25,22 @@
   }
 }
 
-
 .hero-banner__video-container{
   position: absolute;
-  min-width: 101%;
-  min-height: 101%;
-  left: 50%; /* % of surrounding element */
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%; 
   top: 50%;
-  transform: translate(-50%, -50%); /* % of current element */
+  transform: translate(-50%, -50%); 
   filter: saturate(120%);
+  overflow: hidden;
 }
 
 .hero-banner__video {
-    width: 100%;
-    height: 100%;
+    display: block;
+    min-height: 100%;
+    width: auto;
     object-fit: cover;
     object-position: center;
 }
