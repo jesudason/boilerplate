@@ -61,14 +61,22 @@
 
     }
     const heroBannerVideoButton = document.getElementById('heroBanner-videoButton');
+    const playIcon = heroBannerVideoButton.querySelector('.hero-banner__icon--play');
+    const pauseIcon = heroBannerVideoButton.querySelector('.hero-banner__icon--pause');
 
     heroBannerVideoButton.addEventListener('click', function() {
         if (heroVideo.paused) {
             heroVideo.play();
-            heroBannerVideoButton.textContent = 'Pause';
+            heroBannerVideoButton.classList.add('is-playing');
+            heroBannerVideoButton.setAttribute('aria-label', 'Pause video');
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
         } else {
             heroVideo.pause();
-            heroBannerVideoButton.textContent = 'Play';
+            heroBannerVideoButton.classList.remove('is-playing');
+            heroBannerVideoButton.setAttribute('aria-label', 'Play video');
+            playIcon.style.display = 'block';
+            pauseIcon.style.display = 'none';
         }
     });
 

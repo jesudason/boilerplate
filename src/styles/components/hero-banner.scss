@@ -64,3 +64,36 @@
         bottom: 48px;
     }
 }
+
+.hero-banner__button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent; 
+}
+
+// .hero-banner__button.is-playing{
+//     background-color: none;
+// }
+
+.hero-banner__icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.hero-banner__icon--play {
+    display: none;
+}
+
+.hero-banner__icon--pause {
+    display: block;
+}
+
+.hero-banner__button:not(.is-playing) .hero-banner__icon--play {
+    display: block;
+}
+
+.hero-banner__button:not(.is-playing) .hero-banner__icon--pause {
+    display: none;
+}
