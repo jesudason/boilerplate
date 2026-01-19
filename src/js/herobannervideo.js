@@ -2,7 +2,7 @@
   'use strict';
 
 
-    const heroVideo = document.getElementById('hero-banner-video');
+    const heroVideo = document.getElementById('heroBanner-video');
 
     if(heroVideo !== null) {
 
