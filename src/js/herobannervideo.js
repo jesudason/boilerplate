@@ -60,6 +60,16 @@
         window.addEventListener('resize', onResize);
 
     }
+    const heroBannerVideoButton = document.getElementById('heroBanner-videoButton');
 
+    heroBannerVideoButton.addEventListener('click', function() {
+        if (heroVideo.paused) {
+            heroVideo.play();
+            heroBannerVideoButton.textContent = 'Pause';
+        } else {
+            heroVideo.pause();
+            heroBannerVideoButton.textContent = 'Play';
+        }
+    });
 
 })();
