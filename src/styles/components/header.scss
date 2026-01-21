@@ -258,8 +258,7 @@
   display: flex;
   align-items: flex-start;
   &:hover{
-    border-bottom: 4px solid $black;
-    // height: calc(100% - 4px);
+    border-bottom: 4px solid #e42313;
   }
 }
 
