@@ -44,7 +44,7 @@
 .hero-banner__content{
     display: block;
     position: absolute;
-    padding: 157px 0 0 0;// 374px 0 0 0; desktop padding
+    padding-top: 157px;// 374px 0 0 0; desktop padding
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -71,15 +71,39 @@
     .hero-banner{
         height: 665px;
     }
-    .hero-banner-video__control{
-        right: 40px;
-        bottom: 48px;
+    .hero-banner__content{
+        padding-top: 222px;
     }
+    .hero-banner-video__control{
+        right: 10px;
+        bottom: -60px;
+    }
+    .hero-banner__title{
+        font-size: 55px;
+
+    }
+
 }
 
 @media screen and (min-width: $desktop) {
     .hero-banner{
         min-height: 686px;
+    }
+
+    .hero-banner__content{
+        padding: 374px 0 0 0;
+        margin: 0 103px 0 103px;
+        max-width: 1160px;
+        display: flex;
+        position: relative;
+
+
+    }
+    .hero-banner__title{
+        font-size: 70px;
+        text-align: left;
+        line-height: 1.21;
+        letter-spacing: -0.2325rem;
     }
 }
 
@@ -91,8 +115,6 @@
     cursor: pointer;
     background-color: transparent; 
 }
-
-
 
 .hero-banner__icon {
     width: 20px;
