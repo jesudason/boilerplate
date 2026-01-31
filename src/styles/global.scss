@@ -1,10 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $black;
+    background-color: $page-bg;
+    overflow-x: hidden;
 }
 
 main {
-    flex-grow: 1;
-    background: rgba(53, 53, 53, 0.514);
+    display: block;
 }
+
+.page_wrapper {
+    position: relative;
+    background: $page-bg;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ====================
+   TYPOGRAPHY
+   ==================== */
+
+h1{
+    margin: 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.24;
+    letter-spacing: -1px;
+}
+
+button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+a {
+  color: $secondary-color;
+  font-weight: 500;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+
+
+// Float classes  (from utas.edu.au /styles/imports/utilities.scss)
+.pull-left {
+  float: left;
+}
+img.pull-left {
+  margin-right: 1em;
+}
+
+.pull-right {
+  float: right;
+}
+img.pull-right {
+  margin-left: 1em;
+}
+
+
