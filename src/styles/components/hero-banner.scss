@@ -97,22 +97,13 @@
     height: 20px;
     fill: #fff;
     display: block;
+
+
 }
 
-.hero-banner__icon--play {
-    display: none;
-}
-
-.hero-banner__icon--pause {
-    display: block;
-}
-
-.hero-banner__button:not(.is-playing) .hero-banner__icon--play {
-    display: block;
-}
-
-.hero-banner__button:not(.is-playing) .hero-banner__icon--pause {
-    display: none;
+#leftPath, #rightPath {
+    transition: d 250ms ease;
+    fill: white
 }
 
 .hero-banner__link-buttons{

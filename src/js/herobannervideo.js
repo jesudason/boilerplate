@@ -3,6 +3,34 @@
 
     const heroVideo = document.getElementById('heroBanner-video');
     const heroBannerVideoButton = document.getElementById('heroBanner-videoButton');
+    const leftPath = document.getElementById("leftPath");
+    const rightPath = document.getElementById("rightPath");
+    heroBannerVideoButton.setAttribute("aria-label", "Pause video");
+
+    const pauseLeft = "M0 0 L6 0 L6 20 L0 20 Z";
+    const leftPlay  = "M0 0 L10 5 L10 15 L0 20 Z";
+
+    const pauseRight = "M14 0 L20 0 L20 20 L14 20 Z";
+    const rightPlay  = "M10 5 L20 10 L20 10 L10 15 Z";
+    
+    heroBannerVideoButton.addEventListener('click', () => {
+        if (heroVideo.paused) {
+            heroVideo.play();
+            leftPath.setAttribute("d", pauseLeft);
+            rightPath.setAttribute("d", pauseRight);
+            heroBannerVideoButton.setAttribute("aria-label", "Pause video");
+            heroBannerVideoButton.setAttribute("title", "Pause video");
+        } else {
+            heroVideo.pause();
+            leftPath.setAttribute("d", leftPlay);
+            rightPath.setAttribute("d", rightPlay);
+            heroBannerVideoButton.setAttribute("aria-label", "Play video");
+            heroBannerVideoButton.setAttribute("title", "Play video");
+        }
+    });
+
+
+
 
     if(heroVideo !== null) {
 
@@ -61,25 +89,4 @@
 
     }
     
-    if(heroBannerVideoButton !== null && heroVideo !== null) {
-        const playIcon = heroBannerVideoButton.querySelector('.hero-banner__icon--play');
-        const pauseIcon = heroBannerVideoButton.querySelector('.hero-banner__icon--pause');
-
-        heroBannerVideoButton.addEventListener('click', function() {
-            if (heroVideo.paused) {
-                heroVideo.play();
-                heroBannerVideoButton.classList.add('is-playing');
-                heroBannerVideoButton.setAttribute('aria-label', 'Pause video');
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-            } else {
-                heroVideo.pause();
-                heroBannerVideoButton.classList.remove('is-playing');
-                heroBannerVideoButton.setAttribute('aria-label', 'Play video');
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
-            }
-        });
-    }
-
 })();
