@@ -66,6 +66,8 @@
         heroVideoSource.setAttribute('src', videoUrl);
         // Load the video after source has been set
         heroVideo.load();
+
+
         };
 
         // check if the screen size has changed and update the video source
@@ -75,6 +77,12 @@
         if (currentWindow != previousWindow){
             // Update the video source
             setSource();
+
+            // Update the button
+            leftPath.setAttribute("d", pauseLeft);
+            rightPath.setAttribute("d", pauseRight);
+            heroBannerVideoButton.setAttribute("aria-label", "Pause video");
+            heroBannerVideoButton.setAttribute("title", "Pause video");
             // Update previous window
             previousWindow = screenSize();
         }
