@@ -29,6 +29,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  font-family: inherit ;
 }
 
 button::-moz-focus-inner {
@@ -39,6 +40,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {

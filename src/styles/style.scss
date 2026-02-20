@@ -1,11 +1,11 @@
-/* GLobal */
-
-@import 'fonts.scss';
-@import 'global.scss';
+/* Global */
 @import 'reset.css';
 @import 'variables.scss';
+@import 'global.scss';
+
 
 /* Components */
 
 @import 'components/footer.scss';
 @import 'components/header.scss';
+@import 'components/hero-banner.scss';

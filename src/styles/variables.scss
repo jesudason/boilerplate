@@ -1,17 +1,27 @@
 /* Variables */
 
-$desktop: 992px;
-$desktop-large: 1440px;
+$mobile: 480px;
+$mobile-header: 65px;
 
-$black: #000;
-$white: #fff;
-$green-03: #A8EDB3;
-$teal-01: #0B3F47;
-$teal-02: #2E808E;
-$grey-01: #22272B;
-$grey-02: #495054;
-$grey-03: #CDD3D6;
+$tablet: 768px;
+$tablet-header: 75px;
 
-h2 {
-    color: $green-03;
-}
+$desktop: 1280px;
+$desktop-header: 115px;
+
+// Colours (from utas.edu.au /styles/imports/variables.scss)
+$black: black;
+$gray: #929292;
+$white: white;
+
+$primary-color: #e42313;
+$secondary-color: $black;
+
+$page-bg: #fcfcfc;
+$footer-color: $black;
+
+
+
+// Typography
+$font-family-primary: 'Montserrat', sans-serif;
+
