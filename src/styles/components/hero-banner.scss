@@ -69,7 +69,7 @@
         text-align: center;
         margin: 0;
         color: $white;
-        font-size: clamp(2.5rem, 3.4375rem, 4.375rem); // Responsive font size between 40px(mobile), 55px(tablet) and 70px(desktop)
+        font-size:  2.5rem; //clamp(2.5rem, 3.4375rem, 4.375rem); // Responsive font size between 40px(mobile), 55px(tablet) and 70px(desktop)
         font-weight: 600;
         letter-spacing: -2.53px;
         line-height: 1.31;
@@ -152,6 +152,7 @@
         bottom: -60px;
     }
     .hero-banner__title{
+        font-size: 4.375rem;
         .h1{
             line-height: 1.34px;
             letter-spacing: -2.64px;
