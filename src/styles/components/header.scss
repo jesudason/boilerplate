@@ -128,8 +128,8 @@
 
 @media screen and (min-width: $desktop){
 .header__crest {
-    margin: 0;
-    flex-grow: 0;
+    margin: none;
+    flex-grow: initial;
     justify-content: flex-start;
     padding-left: 30px;
     flex-basis: 330px;
@@ -161,6 +161,7 @@
   height: 100%;
   justify-content: space-between;
   border-bottom: 0;
+  width:100%;
 }
 
 .header__secondary-menu {
@@ -236,14 +237,15 @@
   font-size: 1.0625rem;
   font-weight: 600;
   height: 49px;
+  width: 100%;
   flex-grow: 1;
   background: none;
   letter-spacing: -0.01313rem;
   padding: 0px 24px;
   line-height: 1.25rem;
+  text-align: left;
   text-decoration: none;
-  display: flex;
-  align-items: flex-start;
+  display: block;
   &:hover{
     border-bottom: 4px solid #e42313;
   }
@@ -257,6 +259,7 @@
 @media screen and (min-width: $desktop) {
     .header__menus {
         display: flex;
+
     }
 }
 
