@@ -1,17 +1,70 @@
 /* Variables */
 
-$desktop: 992px;
-$desktop-large: 1440px;
+$mobile: 480px;
+$mobile-header: 65px;
 
-$black: #000;
-$white: #fff;
-$green-03: #A8EDB3;
-$teal-01: #0B3F47;
-$teal-02: #2E808E;
-$grey-01: #22272B;
-$grey-02: #495054;
-$grey-03: #CDD3D6;
+$tablet: 768px;
+$tablet-header: 75px;
 
-h2 {
-    color: $green-03;
+$desktop: 1280px;
+$desktop-header: 115px;
+
+// Colours (from utas.edu.au /styles/imports/variables.scss)
+$black: black;
+$gray: #929292;
+$white: white;
+
+$footer-color: black;
+
+$primary-color: #e42313;
+$secondary-color: black;
+
+$page-bg: #fcfcfc;
+
+$search-global-blue: #006bad;
+$search-global-gray: #f2f2f2;
+$search-global-white: #ffffff;
+$search-global-black: #000000;
+$search-global-light-black: #393939;
+
+$search-global__nav-mobile--bg: #d8d8d8;
+$search-global__nav-item--bg: #3b3b3b;
+$search-global__nav-tab-bg--hover: #404040;
+
+$search-global__openDay-bg: #1e1e1e;
+
+$search-global__badge-color: #313131;
+$search-global__badge-border: #e7e7e7;
+
+$search-global__link: #272727;
+$seaerch-global__link--active: #373737;
+$search-global__link-hover: #363636;
+
+$search-global__placeholder: #c7c7c7;
+
+// Typography
+$font-family-primary: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+$font-family-secondary: 'Public Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family-tertiary: 'Roboto Condensed', Arial, sans-serif;
+$font-family__serif: "serif";
+
+$font-bold: bold;
+$font-medium: medium;
+
+
+// Float classes  (from utas.edu.au /styles/imports/utilities.scss)
+.pull-left {
+  float: left;
 }
+img.pull-left {
+  margin-right: 1em;
+}
+
+.pull-right {
+  float: right;
+}
+img.pull-right {
+  margin-left: 1em;
+}
+
+

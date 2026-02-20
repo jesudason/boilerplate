@@ -1,5 +1,62 @@
-<header class="header">
-    <div class="header__container">
-        header
+<header class="header"> 
+    <div class="header__wrapper"> 
+    
+        <button class="header__hamburger" aria-controls="main-menu" aria-expanded="false">
+            <div class="header__hamburger-container">
+                <span class="header__hamburger-icon"></span>
+            </div>
+        </button>
+
+        
+        <div class="header__crest header__crest--dual">
+            <div class="header__crest__primary"> <!-- Should be a button -->
+                <a href="/">
+                    <img src="images/logo.svg" alt="Company Logo" class="header__crest__image">
+                </a>
+            </div>
+            <div class="header__crest__secondary"> <!-- Should be a button -->
+                <a href="/" class="header__crest__link">
+                    <img src="images/logo-climate-action.svg" alt="Climate Logo" class="header__crest__image">
+                </a>
+            </div>
+        </div>
+
+        <div class="header__pullright">
+            <div class="header__menus">
+                <!-- Secondary Menu -->
+                <div class="header__secondary-menu">
+                    <ul class="header__secondary-menu__list">
+                        <button class="interested-toggle">I'm Interested in the uni </button>
+                        <button class="login-toggle">Login</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main Menu -->
+                <div class="header__main-menu">
+                    <ul class="header__main-menu__list">
+                        <button class="header__main-menu__item">Study with us</button>
+                        <button class="header__main-menu__item">Uni life</button>
+                        <button class="header__main-menu__item">Our research</button>
+                        <button class="header__main-menu__item">For community & partners</button>
+                        <button class="header__main-menu__item">About us</button>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="header__actions">
+                <button class="search-toggle" aria-label = "Open search bar">
+                    <!-- <span class="search-toggle__icon"></span> -->
+                     <span class="search-toggle__icon"></span>
+                    <span class="search-toggle__text">Search</span>
+<!-- 
+
+                    <div class="search__container">
+                        <img src="images/Search_Icon.svg" alt="Search" class="search__icon">
+                    </div> -->
+                </button>
+            </div>
+        </div>
+
     </div>
 </header>
