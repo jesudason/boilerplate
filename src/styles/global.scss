@@ -73,3 +73,51 @@ img.pull-right {
 }
 
 
+.search_bar{
+  display: flex;
+  position: relative;
+  margin: 0px 15px;
+  height: 75px;
+  top: -37.5px;
+  border: 1px solid $gray;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.281);
+  font-size: 16px;
+  background-color: white;
+
+}
+
+.search_bar_input {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  align-items: center;
+}
+
+.search_text{
+  flex: 1;
+  padding: 25px;
+  border: none;
+  font-size: 16px;
+
+  margin: 25px 0px 25px 0px;
+}
+
+
+.search_button {
+  height: 100%;
+  width: 68px;
+  background-color: $white;
+
+  .search-toggle__icon {
+    display: block;
+    
+    &::before {
+      font-family: 'Material Symbols Outlined';
+      content: "search";
+      font-size: 24px;
+      position: static;  // Or adjust positioning for this context
+    }
+  }
+}
+
