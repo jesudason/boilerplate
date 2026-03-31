@@ -1,5 +1,5 @@
-const hamburgerButton = document.querySelector('.hamburger');
+const hamburger_button = document.querySelector('.hamburger');
 
-hamburgerButton.addEventListener('click', () => {
-    hamburgerButton.classList.toggle('hamburger--active');
+hamburger_button.addEventListener('click', () => {
+    hamburger_button.classList.toggle('hamburger--active');
 });

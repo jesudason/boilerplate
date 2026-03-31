@@ -17,7 +17,7 @@ main {
     display: block;
 }
 
-.page_wrapper {
+.page-wrapper {
     position: relative;
     background: $page-bg;
 }
@@ -73,7 +73,7 @@ img.pull-right {
 }
 
 
-.search_bar{
+.search-bar{
   display: flex;
   position: relative;
   margin: 0px 15px;
@@ -86,7 +86,7 @@ img.pull-right {
 
 }
 
-.search_bar_input {
+.search-bar-input {
   display: flex;
   flex-direction: row;
 
@@ -94,7 +94,7 @@ img.pull-right {
   align-items: center;
 }
 
-.search_text{
+.search-text{
   flex: 1;
   padding: 25px;
   border: none;
@@ -104,7 +104,7 @@ img.pull-right {
 }
 
 
-.search_button {
+.search-button {
   height: 100%;
   width: 68px;
   background-color: $white;
@@ -121,3 +121,8 @@ img.pull-right {
   }
 }
 
+.no-padding-content-container{
+    padding: 0;
+    width: 80%;
+    justify-self: center;
+}

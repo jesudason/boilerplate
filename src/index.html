@@ -53,7 +53,7 @@
                         <!-- Left bar / Play shape -->
                         <!-- Top-left (x,y), Top-right, Bottom-right, Bottom-left -->
                         <path
-                            id="leftPath"
+                            id="left-path"
                             fill="white"
                             
                             d="M0 0 L6 0 L6 20 L0 20 Z" 
@@ -61,7 +61,7 @@
 
                         <!-- Right pause bar -->
                         <path
-                            id="rightPath"
+                            id="right-path"
                             fill="white"
 
                             d="M14 0 L20 0 L20 20 L14 20 Z" 
@@ -72,14 +72,85 @@
             </div>
 
         </section>
-        <section class="search_bar">
-            <form class="search_bar_input">
-                <input class="search_text" type="text" id="q" value="Search for a course...">
-                <button class="search_button" type="submit" aria-label="Course search">
-                    <span class="search-toggle__icon"></span>
-                </button>
-            </form>
+
+        <section class="no-padding-content-container">
+            <section class="search-bar">
+                <form class="search-bar-input">
+                    <input class="search-text" type="text" id="q" value="Search for a course...">
+                    <button class="search-button" type="submit" aria-label="Course search">
+                        <span class="search-toggle__icon"></span>
+                    </button>
+                </form>
+            </section>
+       
+        <section class="course-section">
+            <!-- Contains Title, 6 course cards in a grid layout.
+                Each card has a hover effect (Title shifts to center and becomes red. A shadow is applied to 
+                the card and the image stays unchanged. The card also has a link to the course page.)
+
+                  h2 {
+                        font-size: 34px;
+                        line-height: 3.125rem;
+                        letter-spacing: -0.94px;
+                    }
+
+            */ -->
+            <div class="course-section__title"> 
+                <h2 >Browse our courses</h2>
+            </div>
+            <div class="course-cards">
+                <div class="course-card">
+                    <img class="Business and Law" src="/src/images/browse-course-banner/law-students-hobart-city-law-precinct-1.jpg" alt="Business and Law">
+                    <h3 class="course-card__title">Business and Law</h3>
+                </div>
+                <div class="course-card">
+                    <img class="Creative Arts and Design" src="/src/images/browse-course-banner/fine-arts-design-student-hunter-street-campus-1.jpg" alt="Creative Arts and Design">
+                    <h3 class="course-card__title">Creative Arts and Design</h3>
+                </div>
+                <div class="course-card">
+                    <img class="Earth, Sea, Antarctic and Environment" src="/src/images/browse-course-banner/science-students-bisdee-tier-greenhill-observatory-1.jpg" alt="Earth, Sea, Antarctic and Environment">
+                    <h3 class="course-card__title">Earth, Sea, Antarctic and Environment</h3>
+                </div>
+                <div class="course-card">
+                    <img class="Education, Humanities and Social Sciences" src="/src/images/browse-course-banner/education-humanities-social-sciences-student-1.jpg" alt="Education, Humanities and Social Sciences">
+                    <h3 class="course-card__title">Education, Humanities and Social Sciences</h3>
+                </div>
+                <div class="course-card">
+                    <img class="Health and Medicine" src="/src/images/browse-course-banner/nursing-students-sydney-campus-sydney-1.jpg" alt="Health and Medicine">
+                    <h3 class="course-card__title">Health and Medicine</h3>
+                </div>
+                <div class="course-card">
+                    <img class="Science, Technology and Engineering" src="/src/images/browse-course-banner/science-students-bisdee-tier-greenhill-observatory-1.jpg" alt="Science, Technology and Engineering">
+                    <h3 class="course-card__title">Science, Technology and Engineering</h3>
+                </div>
+            </div>
+
         </section>
+        <section class="adventure-section">
+            <!-- Title, 2x2 grid of title and text blurb pertaining to title subject. -->
+        </section> 
+        <section class="thinkingUni-banner">
+
+        </section>
+        <section class="thinkinguni-section">
+
+        </section>
+        <section class="sustainability-section">
+
+        </section>
+        <section class="our-students-scroll-banner">
+
+        </section>
+         <section class="transform-university-section">
+
+        </section>
+        <section class="events-section">
+
+        </section>
+         <section class="news-section">
+
+        </section>
+         </section>
     </main>
 
     <include src="partials/footer.html"></include>
