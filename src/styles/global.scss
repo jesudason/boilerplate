@@ -126,3 +126,29 @@ img.pull-right {
     width: 80%;
     justify-self: center;
 }
+
+.course-section {
+  overflow: hidden;
+}
+
+.course-cards{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 30px;
+    height: 300px;
+}
+
+.course-card{
+  display: block;
+  width: 338px;
+  height: 206px;
+  flex-shrink: 0;
+}
+
+.course-image{
+  display: block;
+  width: 338px;
+  height: 206px;
+  object-fit: cover;
+}
